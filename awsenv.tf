@@ -33,7 +33,7 @@ resource "aws_s3_bucket" "b" {
     Environment = "Dev"
   }
 }
-
+#comment
 resource "aws_subnet" "subnet-2" {
   vpc_id            = aws_vpc.prod-vpc.id
   cidr_block        = var.subnet_prefix[1].cidr_block
